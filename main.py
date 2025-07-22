@@ -43,11 +43,10 @@ def show_param_info():
                 "title": "Create Transaction (create_transaction)",
                 "key": "create_transaction",
                 "example": {
+                    "account": "Cash",
+                    "category": "Food",
                     "amount": 100.0,
-                    "account_id": 1,
-                    "category_id": 2,
-                    "type": "expense",  # or "income"
-                    "description": "Lunch"
+                    "type": "spent"  # or "earn"
                 }
             },
             "7": {
@@ -55,30 +54,32 @@ def show_param_info():
                 "key": "create_category",
                 "example": {
                     "name": "Food",
-                    "type": "expense"  # or "income"
+                    "icon": "🍽️",
+                    "type": "spent"  # or "earn"
                 }
             },
             "8": {
                 "title": "Create Account (create_acc)",
                 "key": "create_acc",
                 "example": {
-                    "name": "Cash",
-                    "currency": "USD"
+                    "account": "Cash",
+                    "amount": 100.0
                 }
             },
             "2": {
                 "title": "List Transactions (transactions)",
                 "key": "transactions",
                 "example": {
-                    "date_from": "2024-01-01",
-                    "date_to": "2024-12-31"
+                    "from": "2024-01-01T00:00:00",
+                    "to": "2024-12-31T23:59:59"
                 }
             },
             "4": {
                 "title": "List Categories (categories)",
                 "key": "categories",
                 "example": {
-                    "type": "expense"  # or "income"
+                    "type": "spent",  # or "earn"
+                    "user": "true"  # or "false" or omit
                 }
             }
         }
@@ -99,7 +100,6 @@ def show_param_info():
             print(json.dumps({info["key"]: info["example"]}, indent=4))
         elif choice == 'q':
             break
-            return
         else:
             print("❓ Unknown selection.")
         
