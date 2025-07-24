@@ -1,6 +1,17 @@
 # SpendSense API Client
 
-![Лого SpendSense](src/img/logo.png)
+<p align="center">
+  <img src="src/img/logo.png" alt="SpendSense API Client Logo" />
+</p>
+
+<p align="center">
+  <a href="https://ko-fi.com/v1mer" target="_blank">
+    <img src="https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white" alt="Support me on Ko-fi" />
+  </a>
+  <a href="https://www.paypal.com/donate?business=mpatik2006@gmail.com&currency_code=USD">
+    <img src="https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white" alt="Donate via PayPal" />
+  </a>
+</p>
 
 A simple console-based API client for interacting with the SpendSense API, designed to manage financial transactions, accounts, and categories.
 
@@ -147,6 +158,15 @@ Contributions are welcome! To contribute:
 5. Open a pull request.
 
 Please ensure your code follows the existing style and includes appropriate comments.
+
+## 🙌 Support the Project
+
+If you find this project useful and would like to support its development, consider donating:
+
+- 💖 Ko-fi: [https://ko-fi.com/v1mer](https://ko-fi.com/v1mer)
+- 📬 PayPal: [mpatik2006@gmail.com](https://www.paypal.com/donate?business=mpatik2006@gmail.com&currency_code=USD)
+
+Your support helps me dedicate more time to improving this project. Thank you! 🙏
 
 ## License
 
